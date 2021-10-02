@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/styles.css" />
+		<title>Travel Site</title>
+	</head>
+	<body>
+		<header class="navigation">
+			<h1 class="navigation__title">Travel Site</h1>
+			<nav class="navigation__navbar">
+				<ul class="navigation__navbar--list">
+					<li class="navigation__navbar--link">
+						<a class="navigation__navbar--current" href="./index.html">Home</a>
+					</li>
+					<li class="navigation__navbar--link">
+						<a href="./pages/hawaii.html">Hawaii</a>
+					</li>
+					<li class="navigation__navbar--link">
+						<a href="./pages/iceland.html">Iceland</a>
+					</li>
+					<li class="navigation__navbar--link">
+						<a href="./pages/greece.html">Greece</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<div class="main__hero">
+				<section class="main__hero-left">
+					<h1 class="main__hero__heading">
+						Travelling Comes With Endless Discoveries
+					</h1>
+					<p class="main__hero__paragraph">
+						Don’t let your dreams be just dreams. Experience the world by
+						booking a vacation with us now.
+					</p>
+					<!-- TODO adjust border radius, color in css -->
+					<button class="main__button">Get started</button>
+				</section>
+				<section class="main__hero-right">
+					<!-- TODO DONE* adjust height of image in scss -->
+					<img
+						class="main__hero-image"
+						src="../assets/Images/hero.png"
+						alt=""
+					/>
+				</section>
+			</div>
+			<div class="main__cards">
+				<h1 class="main__cards__heading-hero">Recommendations</h1>
+				<section class="main__cards__section">
+					<!-- TODO DONE* adjust margins and reduce gutter for cards -->
+					<div class="main__cards--image-hawaii">
+						<div class="main__cards--image--overlay-text">Hawaii</div>
+					</div>
+					<div class="main__cards--image-iceland">
+						<div class="main__cards--image--overlay-text">Iceland</div>
+					</div>
+					<div class="main__cards--image-greece">
+						<div class="main__cards--image--overlay-text">Greece</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer class="footer">
+			<section class="footer__info">
+				<h1 class="footer__heading">Contact</h1>
+				<h2 class="footer--type">email</h2>
+				<p class="footer--type-text">info@travelsite.com</p>
+			</section>
+			<!-- TODO DONE* review order of containers for flex consideration -->
+			<section class="footer__info">
+				<h1 class="footer__heading">Hours</h1>
+				<div class="footer--hours">
+					<div class="footer--hours-section">
+						<h2 class="footer--type">monday - friday</h2>
+						<p class="footer--type-text">9:00 AM - 5:00 PM</p>
+					</div>
+					<div class="footer--hours-section">
+						<h2 class="footer--type">saturday</h2>
+						<p class="footer--type-text">10:00 AM - 4:00 PM</p>
+					</div>
+					<div class="footer--hours-section">
+						<h2 class="footer--type">sunday</h2>
+						<p class="footer--type-text">Closed</p>
+					</div>
+				</div>
+			</section>
+			<section class="footer__info">
+				<h1 class="footer__heading">Social</h1>
+				<!-- TODO DONE* set to flex or inline -->
+				<div class="footer__icon">
+					<img
+						class="footer__icon-img"
+						src="../assets/Icons/icon-instagram.png"
+						alt=""
+					/>
+					<img
+						class="footer__icon-img"
+						src="../assets/Icons/icon-facebook.png"
+						alt=""
+					/>
+					<img
+						class="footer__icon-img"
+						src="../assets/Icons/icon-twitter.png"
+						alt=""
+					/>
+				</div>
+			</section>
+		</footer>
+	</body>
+</html>

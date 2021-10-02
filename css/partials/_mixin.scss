@@ -1,0 +1,80 @@
+@mixin card-layout {
+	position: relative;
+	height: 18rem;
+	width: 20vw;
+	margin: 1.25rem 1rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-radius: 6px;
+	background-color: #fff;
+	text-align: center;
+	padding: 2rem 0;
+}
+@mixin hero-image {
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	background-position: center;
+}
+@mixin text-style-1() {
+	font-size: 3.75rem;
+	font-weight: 300;
+}
+@mixin text-style-2() {
+	font-size: 2.0625rem;
+	font-weight: 300;
+}
+@mixin text-style-3() {
+	font-size: 1.3125rem;
+	font-weight: 400;
+}
+@mixin text-style-4() {
+	font-size: 1.125rem;
+	font-weight: 400;
+}
+@mixin text-style-5() {
+	font-size: 1.125rem;
+	font-weight: 400;
+	font-style: italic;
+}
+@mixin text-style-6() {
+	font-size: 2.8125rem;
+	font-weight: 400;
+}
+
+@mixin beginning() {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@mixin images() {
+	min-height: 15rem;
+	max-height: 34.375rem;
+	padding: 1.25rem;
+	margin: 1.25rem;
+}
+@mixin icon() {
+	min-width: 3.125rem;
+	max-width: 7.5rem;
+}
+@mixin button() {
+	min-width: 11.25rem;
+	max-width: 80%;
+	padding: 1.25rem;
+	margin: 1.25rem 1.25rem 1.25rem 0;
+	background-color: $clr-nitro-blue;
+	color: $clr-white;
+	border: none;
+	text-transform: uppercase;
+}
+@mixin flex($direction, $justify, $align) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+}
