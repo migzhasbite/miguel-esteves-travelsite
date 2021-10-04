@@ -1,0 +1,45 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #335576;
+  font-size: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 0.3125rem;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.button {
+  background-color: #db7a4e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button--link {
+  text-decoration: none;
+  color: white;
+}
+
+input[type=submit]:hover {
+  background-color: #db7a4e;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #fefaf5;
+  padding: 20px;
+}/*# sourceMappingURL=form.css.map */

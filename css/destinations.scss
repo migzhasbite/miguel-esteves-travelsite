@@ -1,0 +1,64 @@
+@use "./partials/colors" as *;
+@use "./partials/mixin" as *;
+
+.destination {
+	&--hawaii {
+		@include flex(column, space-between, none);
+		@include hawaii;
+	}
+	&--iceland {
+		@include flex(column, space-between, none);
+		@include iceland;
+	}
+	&--greece {
+		@include flex(column, space-between, none);
+		@include greece;
+	}
+	&__heading {
+		color: $clr-white;
+		letter-spacing: 0.25rem;
+		padding: 1.25rem;
+		margin: 1.25rem 0;
+		font-size: 4rem;
+	}
+	&__container {
+		@include flex(column, none, none);
+		padding: 1.25rem;
+		margin: 1.25rem;
+	}
+	&__cards {
+		@include flex(row, space-around, center);
+		position: relative;
+		margin: 1.25rem;
+		padding: 1.25rem;
+		background-color: $clr-white;
+		border-radius: 5px;
+		&__container {
+			@include flex(row, center, center);
+		}
+	}
+	&--itinerary {
+		@include flex(column, space-between, center);
+		background-color: #fff;
+		text-align: center;
+		padding: 1.25 auto;
+		list-style: none;
+		min-width: 12.5rem;
+		max-width: 18.75rem;
+		height: 24rem;
+		box-shadow: 0 0 0 rgba(0, 0, 0, 0.8);
+	}
+	&--day {
+		border-bottom: 2px solid;
+		padding: 0 1.25rem;
+		// margin: 1.25rem;
+		width: 100%;
+		font-weight: 900;
+	}
+	&--activity {
+		background-color: $clr-light-greyish-orange;
+		padding: 1rem;
+		margin: 1rem;
+		width: 100%;
+	}
+}

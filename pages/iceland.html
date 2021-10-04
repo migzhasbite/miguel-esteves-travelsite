@@ -4,60 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/destinations.css">
+    <title>Iceland</title>
 </head>
 <body>
     <body>
-		<header class="navigation">
-			<h1 class="navigation__title">Travel Site</h1>
-			<nav class="navigation__navbar">
-				<ul class="navigation__navbar--list">
-					<li class="navigation__navbar--link"><a href="../index.html">Home</a></li>
-					<li class="navigation__navbar--link"><a href="../pages/hawaii.html">Hawaii</a></li>
-					<li class="navigation__navbar--link"><a class="navigation__navbar--current" href="../pages/iceland.html">Iceland</a></li>
-					<li class="navigation__navbar--link"><a href="../pages/greece.html">Greece</a></li>
-				</ul>
-			</nav>
+		<header class="header">
+			<h1><a class="header--logo" href="../index.html">Travel Site</a></h1>
+			<nav class="navbar">
+			<div class=header__div>
+					<ul class="navbar--list">
+						<li><a class="navbar--link" href="../index.html">Home</a></li>
+						<li><a class="navbar--link" href="./hawaii.html">Hawaii</a></li>
+						<li><a class="navbar--current" href="./iceland.html">Iceland</a></li>
+						<li><a class="navbar--link" href="./greece.html">Greece</a></li=>
+						</ul>
+					</div>
+				</nav>
 		</header>
-		<main class="main--iceland">
-                
-                <div class="main__cards">
-                    <h1 class="main__cards__heading">Iceland</h1>
-                    <section class="main__cards__section">
-                        <div class="main__cards--itinerary">
-                            <!-- TODO use css 'content' property to fill itinerary items -->
-                            <h2 class="main__cards--itinerary--day">Friday</h2>
-                            <p class="main__cards--itinerary--activity">Breakfast</p>
-                            <p class="main__cards--itinerary--activity">Lunch</p>
-                            <p class="main__cards--itinerary--activity">Dinner</p>
-                            <p class="main__cards--itinerary--activity">Hiking</p>
+		<section class="destination--iceland">
+                <div class="destination__container">
+                <h1 class="destination__heading">Iceland</h1>
+                    <div class="destination__cards__container">
+
+                        <div class="destination__cards">
+                            <ul class="destination--itinerary">
+                                <li class="destination--day">Friday</li>
+                                <li class="destination--activity">Breakfast</li>
+                                <li class="destination--activity">Lunch</li>
+                                <li class="destination--activity">Dinner</li>
+                                <li class="destination--activity">Hiking</li>
+                            </ul>
                         </div>
-                        <div class="main__cards--itinerary">
-                            <!-- TODO use css 'content' property to fill itinerary items -->
-                            <h2 class="main__cards--itinerary--day">Saturday</h2>
-                            <p class="main__cards--itinerary--activity">Breakfast</p>
-                            <p class="main__cards--itinerary--activity">Lunch</p>
-                            <p class="main__cards--itinerary--activity">Dinner</p>
-                            <p class="main__cards--itinerary--activity">Hiking</p>
+                        <div class="destination__cards">
+                            <ul class="destination--itinerary">
+                                <li class="destination--day">Saturday</li>
+                                <li class="destination--activity">Breakfast</li>
+                                <li class="destination--activity">Lunch</li>
+                                <li class="destination--activity">Dinner</li>
+                                <li class="destination--activity">Hiking</li>
+                            </ul>
                         </div>
-                        <div class="main__cards--itinerary">
-                            <!-- TODO use css 'content' property to fill itinerary items -->
-                            <h2 class="main__cards--itinerary--day">Sunday</h2>
-                            <p class="main__cards--itinerary--activity">Breakfast</p>
-                            <p class="main__cards--itinerary--activity">Lunch</p>
-                            <p class="main__cards--itinerary--activity">Dinner</p>
-                            <p class="main__cards--itinerary--activity">Hiking</p>
+                        <div class="destination__cards">
+                            <ul class="destination--itinerary">
+                                <li class="destination--day">Sunday</li>
+                                <li class="destination--activity">Breakfast</li>
+                                <li class="destination--activity">Lunch</li>
+                                <li class="destination--activity">Dinner</li>
+                                <li class="destination--activity">Hiking</li>
+                            </ul>
                         </div>
-                    </section>
-                </div>
-            </main>
-            <footer>
+                        
+                    </div>
+            </div>
+            </section>
             <footer class="footer">
                 <section class="footer__info">
                     <h1 class="footer__heading">Contact</h1>
                     <h2 class="footer--type">email</h2>
-                    <p class="footer--type-text">info@travelsite.com</p>
+                    <p> <a class="footer--type-text" href="#">info@travelsite.com</a></p>
                 </section>
                 <!-- TODO DONE* review order of containers for flex consideration -->
                 <section class="footer__info">
@@ -81,24 +87,32 @@
                     <h1 class="footer__heading">Social</h1>
                     <!-- TODO DONE* set to flex or inline -->
                     <div class="footer__icon">
-                        <img
+                        <a href="">
+
+                            <img
                             class="footer__icon-img"
                             src="../assets/Icons/icon-instagram.png"
                             alt=""
-                        />
-                        <img
+                            />
+                        </a>
+                        <a href="#">
+
+                            <img
                             class="footer__icon-img"
                             src="../assets/Icons/icon-facebook.png"
                             alt=""
-                        />
-                        <img
+                            />
+                        </a>
+                        <a href="#">
+
+                            <img
                             class="footer__icon-img"
                             src="../assets/Icons/icon-twitter.png"
                             alt=""
-                        />
+                            />
+                        </a>
                     </div>
                 </section>
             </footer>
-        </footer>
 </body>
 </html>

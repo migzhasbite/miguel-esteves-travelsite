@@ -1,15 +1,23 @@
-@mixin card-layout {
-	position: relative;
-	height: 18rem;
-	width: 20vw;
-	margin: 1.25rem 1rem;
+// @mixin card {
+
+// }
+@mixin hawaii {
+	background-image: url("../../assets/images/hawaii.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: contain;
-	border-radius: 6px;
-	background-color: #fff;
-	text-align: center;
-	padding: 2rem 0;
+	background-size: cover;
+}
+@mixin iceland {
+	background-image: url("../../assets/images/iceland.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+@mixin greece {
+	background-image: url("../../assets/images/greece.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 @mixin hero-image {
 	position: relative;
@@ -55,8 +63,8 @@
 @mixin images() {
 	min-height: 15rem;
 	max-height: 34.375rem;
-	padding: 1.25rem;
-	margin: 1.25rem;
+	// padding: 1.25rem;
+	// margin: 1.25rem;
 }
 @mixin icon() {
 	min-width: 3.125rem;

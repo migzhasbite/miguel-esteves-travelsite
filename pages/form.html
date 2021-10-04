@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/form.css" />
+		<title>Form</title>
+	</head>
+	<body>
+		<h1>Travel Site Contact Form</h1>
+		<div class="form__container">
+			<form action="/action_page.php">
+				<label for="form__name">First Name</label><br />
+				<input type="text" id="first-name" name="firstname" /><br />
+
+				<label for="lname">Last Name</label><br />
+				<input type="text" id="last-name" name="lastname" /><br />
+
+				<label for="phone">Phone</label><br />
+				<input type="text" id="phone" name="phone" /><br />
+
+				<label for="email">Email</label><br />
+				<input type="text" id="email" name="email" /><br />
+
+				<label for="country">Country</label><br />
+				<select id="country" name="country">
+					<option placeholder="Select country"></option>
+					<option value="greece">Greece</option>
+					<option value="hawaii">Hawaii</option>
+					<option value="iceland">Iceland</option>
+				</select>
+				<br />
+
+				<label for="subject">Subject</label><br />
+				<textarea
+					id="subject"
+					name="subject"
+					placeholder="Tell us where you want to go"
+					style="height: 200px"
+				></textarea
+				><br />
+
+				<button class="button">Submit</button>
+				<button class="button">
+					<a class="button--link" href="../index.html">Go Back</a>
+				</button>
+			</form>
+		</div>
+	</body>
+</html>

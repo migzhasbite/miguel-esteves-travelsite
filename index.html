@@ -4,72 +4,65 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../css/styles.css" />
+		<link rel="stylesheet" href="../css/main.css" />
 		<title>Travel Site</title>
 	</head>
 	<body>
-		<header class="navigation">
-			<h1 class="navigation__title">Travel Site</h1>
-			<nav class="navigation__navbar">
-				<ul class="navigation__navbar--list">
-					<li class="navigation__navbar--link">
-						<a class="navigation__navbar--current" href="./index.html">Home</a>
-					</li>
-					<li class="navigation__navbar--link">
-						<a href="./pages/hawaii.html">Hawaii</a>
-					</li>
-					<li class="navigation__navbar--link">
-						<a href="./pages/iceland.html">Iceland</a>
-					</li>
-					<li class="navigation__navbar--link">
-						<a href="./pages/greece.html">Greece</a>
-					</li>
-				</ul>
-			</nav>
+		<header class="header">
+			<h1><a class="header--logo" href="./index.html">Travel Site</a></h1>
+			<nav class="navbar">
+			<div class=header__div>
+					<ul class="navbar--list">
+						<li><a class="navbar--current" href="./index.html">Home</a></li>
+						<li><a class="navbar--link" href="./pages/hawaii.html">Hawaii</a></li>
+						<li><a class="navbar--link" href="./pages/iceland.html">Iceland</a></li>
+						<li><a class="navbar--link" href="./pages/greece.html">Greece</a></li=>
+						</ul>
+					</div>
+				</nav>
 		</header>
-		<main class="main">
-			<div class="main__hero">
-				<section class="main__hero-left">
-					<h1 class="main__hero__heading">
+		<section class="hero">
+			<div class="hero__div--left">
+				<!-- <div class="hero-left"> -->
+					<h1 class="hero__heading">
 						Travelling Comes With Endless Discoveries
 					</h1>
-					<p class="main__hero__paragraph">
+					<p class="hero__paragraph">
 						Don’t let your dreams be just dreams. Experience the world by
 						booking a vacation with us now.
 					</p>
 					<!-- TODO adjust border radius, color in css -->
-					<button class="main__button">Get started</button>
-				</section>
-				<section class="main__hero-right">
+					<button class="hero__button"><a class="hero__button--link"href="./pages/form.html">Get started</a></button>
+				</div>
+				<div class="hero__div--right">
 					<!-- TODO DONE* adjust height of image in scss -->
 					<img
-						class="main__hero-image"
+						class="hero__image"
 						src="../assets/Images/hero.png"
 						alt=""
 					/>
-				</section>
-			</div>
-			<div class="main__cards">
-				<h1 class="main__cards__heading-hero">Recommendations</h1>
-				<section class="main__cards__section">
-					<!-- TODO DONE* adjust margins and reduce gutter for cards -->
-					<div class="main__cards--image-hawaii">
-						<div class="main__cards--image--overlay-text">Hawaii</div>
+				</div>
+			</section>
+			</section>
+			<section class="recommendations">
+				<h1 class="recommendations__heading">Recommendations</h1>
+				<div class="recommendations__cards">
+					<a href ="./pages/hawaii.html"class="recommendations__cards hawaii">
+						<span class="recommendations__cards--overlay-text">Hawaii</span>
+						</a>
+					<a href ="./pages/iceland.html"class="recommendations__cards iceland">
+						<span class="recommendations__cards--overlay-text">Iceland</span>
+						</a>
+					<a href ="./pages/greece.html"class="recommendations__cards greece">
+						<span class="recommendations__cards--overlay-text">Greece</span>
+						</a>
 					</div>
-					<div class="main__cards--image-iceland">
-						<div class="main__cards--image--overlay-text">Iceland</div>
-					</div>
-					<div class="main__cards--image-greece">
-						<div class="main__cards--image--overlay-text">Greece</div>
-					</div>
-				</section>
-			</div>
-		</main>
+		</section>
 		<footer class="footer">
 			<section class="footer__info">
 				<h1 class="footer__heading">Contact</h1>
 				<h2 class="footer--type">email</h2>
-				<p class="footer--type-text">info@travelsite.com</p>
+				<p><a class="footer--type-text" href="#">info@travelsite.com</a></p>
 			</section>
 			<!-- TODO DONE* review order of containers for flex consideration -->
 			<section class="footer__info">
@@ -93,21 +86,30 @@
 				<h1 class="footer__heading">Social</h1>
 				<!-- TODO DONE* set to flex or inline -->
 				<div class="footer__icon">
-					<img
+					<a href="">
+
+						<img
 						class="footer__icon-img"
 						src="../assets/Icons/icon-instagram.png"
 						alt=""
-					/>
-					<img
+						/>
+					</a>
+					<a href="#">
+
+						<img
 						class="footer__icon-img"
 						src="../assets/Icons/icon-facebook.png"
 						alt=""
-					/>
-					<img
+						/>
+					</a>
+					<a href="#">
+
+						<img
 						class="footer__icon-img"
 						src="../assets/Icons/icon-twitter.png"
 						alt=""
-					/>
+						/>
+					</a>
 				</div>
 			</section>
 		</footer>

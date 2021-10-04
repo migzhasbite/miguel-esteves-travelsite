@@ -1,0 +1,210 @@
+@use "./partials/colors" as *;
+@use "./partials/mixin" as *;
+
+// TODO add partials to scss using @use command
+//TODO adjust font sizes and family on _typography.scss partial
+//TODO adjust colors on _colors.scss partial
+* {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.header {
+	width: 100%;
+	position: fixed;
+	@include flex(row, space-between, center);
+	background-color: $clr-white;
+	padding: 0 1.25rem;
+	&__div {
+		@include flex(none, none, none);
+	}
+	&--logo:any-link {
+		text-decoration: none;
+		color: $clr-dark-moderate-blue;
+		font-size: 1rem;
+		padding: 0 1.25rem;
+	}
+}
+.navbar {
+	@include flex(row, flex-end, center);
+	width: 500px;
+	background-color: $clr-white;
+	padding: auto 2rem;
+	margin: 0 1.25rem;
+	&--list {
+		background-color: $clr-white;
+		@include flex(row, space-between, center);
+	}
+	& li {
+		list-style: none;
+		font-size: 0.75rem;
+		padding: 0 1rem;
+		margin: 0 auto;
+		& > a {
+			text-decoration: none;
+			&:any-link {
+				color: black;
+			}
+			&:hover {
+				border-bottom: $soft-orange 2px solid;
+				padding-bottom: 0.25rem;
+			}
+		}
+	}
+	&--current {
+		border-bottom: $soft-orange 2px solid;
+		padding: 0.25rem 0;
+	}
+}
+
+.hero {
+	@include flex(row, space-between, center);
+	padding: 1.25rem;
+	background-color: $clr-light-greyish-orange;
+
+	&__heading {
+		color: $clr-dark-moderate-blue;
+		padding: 1rem 0;
+	}
+	&__paragraph {
+		color: $clr-dark-moderate-blue;
+		padding: 1rem 0;
+		font-size: 0.625rem;
+	}
+	&__div {
+		&--right {
+			padding: 1rem;
+		}
+		&--left {
+			padding: 1rem;
+			// margin: 1rem;
+			width: 30%;
+			// border: 2px solid;
+		}
+	}
+	&__image {
+		width: 30vw;
+		height: auto;
+		padding: 1.25rem;
+		margin: 1.25rem;
+	}
+	&__button {
+		border-radius: 1.5625rem;
+		background: $soft-orange;
+		width: 7rem;
+		height: 1.5rem;
+		border: none;
+		color: white;
+		font-size: 0.625rem;
+		&--link {
+			text-decoration: none;
+			color: white;
+		}
+	}
+}
+.hawaii {
+	background-image: url("../assets/images/hawaii.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 200px;
+	max-width: 300px;
+	height: 24rem;
+	position: relative;
+	margin: 10px;
+	border: 1px solid rgba($color: #000000, $alpha: 0.2);
+}
+.iceland {
+	background-image: url("../assets/images/iceland.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 200px;
+	max-width: 300px;
+	height: 24rem;
+	position: relative;
+	margin: 10px;
+	border: 1px solid rgba($color: #000000, $alpha: 0.2);
+}
+.greece {
+	background-image: url("../assets/images/greece.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 200px;
+	max-width: 300px;
+	height: 24rem;
+	position: relative;
+	margin: 10px;
+	border: 1px solid rgba($color: #000000, $alpha: 0.2);
+}
+.recommendations {
+	padding: 1.25rem;
+	&__heading {
+		color: $clr-dark-moderate-blue;
+		padding: 1.25rem;
+		font-size: 1rem;
+	}
+	&__cards {
+		@include flex(row, center, center);
+		// @include images;
+		width: 100%;
+		border-radius: 5px;
+		flex-grow: 1;
+		// opacity: 20%;
+		transition: 0.3s;
+		box-shadow: 0 0 0 rgba(0, 0, 0, 0.8);
+		& a:hover {
+			box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+		}
+		&--overlay-text {
+			position: absolute;
+			color: $clr-white;
+			font-weight: 700;
+			bottom: 5%;
+			right: 5%;
+		}
+	}
+}
+
+.footer {
+	background-color: $clr-light-greyish-orange;
+	@include flex(row, space-evenly, center);
+	padding: 1.25rem;
+	&__info {
+		@include flex(column, space-between, none);
+		color: $soft-orange;
+		padding: 1.25rem;
+	}
+	&__heading {
+		color: $clr-dark-moderate-blue;
+	}
+	&--type {
+		text-transform: uppercase;
+		font-size: 10px;
+		font-weight: 300;
+		padding: 1.25rem 0;
+		&-text {
+			color: $clr-dark-moderate-blue;
+			text-decoration: none;
+		}
+	}
+	&--hours {
+		@include flex(row, space-between, center);
+		font-weight: 300;
+		&-section {
+			padding-right: 1.25rem;
+		}
+	}
+	&__icon {
+		@include flex(row, space-evenly, flex-end);
+		padding: 1.25rem 0;
+
+		&-img {
+			margin-right: 1.25rem;
+			min-height: 1.25rem;
+			max-height: 1.25rem;
+		}
+	}
+}

@@ -1,0 +1,88 @@
+.destination--hawaii {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: none;
+  background-image: url("../../assets/images/hawaii.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.destination--iceland {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: none;
+  background-image: url("../../assets/images/iceland.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.destination--greece {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: none;
+  background-image: url("../../assets/images/greece.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.destination__heading {
+  color: #ffff;
+  letter-spacing: 0.25rem;
+  padding: 1.25rem;
+  margin: 1.25rem 0;
+  font-size: 4rem;
+}
+.destination__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  padding: 1.25rem;
+  margin: 1.25rem;
+}
+.destination__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  margin: 1.25rem;
+  padding: 1.25rem;
+  background-color: #ffff;
+  border-radius: 5px;
+}
+.destination__cards__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.destination--itinerary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  text-align: center;
+  padding: 1.25 auto;
+  list-style: none;
+  min-width: 12.5rem;
+  max-width: 18.75rem;
+  height: 24rem;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.8);
+}
+.destination--day {
+  border-bottom: 2px solid;
+  padding: 0 1.25rem;
+  width: 100%;
+  font-weight: 900;
+}
+.destination--activity {
+  background-color: #fefaf5;
+  padding: 1rem;
+  margin: 1rem;
+  width: 100%;
+}/*# sourceMappingURL=destinations.css.map */
